@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Registration Form</title>
+	</head>
+	<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        form {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+    </style>
+	<body>
+		<h1>Employee Registration Form</h1>
+		<form>
+		<h2>1.Personal Details :</h2>
+		<fieldset>
+		    <legend>Personal Details:</legend>
+			<label for="fname" >Full name:</label>
+			<input type="text" class="inline" id="fname" name="fname" placeholder="First Middle Last" required><br>
+			<label>Gender:</label>				  
+			<label for="male" class="inline"> Male</label><input type="checkbox" id="male" name="male" value="Male">
+			<label for="female"> Female</label>
+			<input type="checkbox" id="female" name="female" value="Female">
+			<label for="others"> Others </label>
+			<input type="checkbox" id="others" name="others" value="Others"><br>
+			<label for="dod">DOD:</label>
+			<input type="date" id="dod" name="dod"><br>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" placeholder="abc@gmail.com" pattern=[a @ gmail.com 0-9]{4} required><br>
+			<label for="num">Contact Number:</label>
+			<input type="Number" id="num" name="num" required><br><br>
+		</fieldset>
+		<h2>2.Qualification Details :</h2>
+		<fieldset>
+		    <legend>Graducation Details :</legend>
+			<label for="degree">Degree : </label>
+			<input type="text" id="degree" name="degree" required><br>
+			<label for="branch">Branch :</label>				  
+			<input type="text" id="branch" name="branch" required ><br>
+			<label for="yop"> Year of Passout : </label>
+			<input type="number" id="yop" name="Year of Passout"><br>
+			<label for="Percentage"> Percentage : </label>
+			<input type="number" id="Percentage" name="Percentage" required><br>
+			<label for="Institute Name:"> Institute Name: </label>
+			<input type="text" id="Institute Name:" name="Institute Name:" required><br><br>
+		</fieldset>
+		<fieldset>
+		    <legend>12th Details :</legend>
+			<label for="Board"> Board: </label>
+			<input type="text" id="Board" name="Board" required><br>
+			<label for="Percentage"> Percentage : </label>
+			<input type="number" id="Percentage" name="Percentage" required><br>
+			<label for="yop"> Year of Passout : </label>
+			<input type="number" id="yop" name="Year of Passout"><br>
+			<label for="College Name:"> College Name: </label>
+			<input type="text" id="College Name:" name="College Name:"><br><br>
+		</fieldset>
+		<fieldset>
+		    <legend>10th Details :</legend>
+			<label for="Board"> Board: </label>
+			<input type="text" id="Board" name="Board" required><br>
+			<label for="Percentage"> Percentage : </label>
+			<input type="number" id="Percentage" name="Percentage"required><br>
+			<label for="yop"> Year of Passout : </label>
+			<input type="number" id="yop" name="Year of Passout"><br>
+			<label for="College Name"> School Name: </label>
+			<input type="text" id="College Name" name="College Name" ><br><br>
+		</fieldset>
+		<h2>3.Address:</h2>
+		<fieldset>
+		    <legend>Permanent Address:</legend>
+			<label for="Address"> Address: </label>
+			<input type="text" id="Address" name="Address" required><br>
+			<label for="City"> City : </label>
+			<input type="text" id="City" name="City"required><br>
+			<label for="pincode"> Pin Code : </label>
+			<input type="number" id="pincode" name="pincode" required><br>
+			<label for="State"> State : </label>
+			<input type="text" id="State" name="State"required><br>
+			<label for="Country"> Country: </label>
+			<input type="text" id="Country" name="Country" required ><br><br>
+		</fieldset>
+		<fieldset>
+		    <legend>Current Address:</legend>
+			<input type="checkbox" id="sapa" name="sapa">
+			<label for="sapa"> Same as Permanent Address </label><br>
+			<label for="Address"> Address: </label>
+			<input type="text" id="Address" name="Address"><br>
+			<label for="City"> City : </label>
+			<input type="text" id="City" name="City"><br>
+			<label for="pincode"> Pin Code : </label>
+			<input type="number" id="pincode" name="pincode"><br>
+			<label for="State"> State : </label>
+			<input type="text" id="State" name="State"><br>
+			<label for="Country"> Country: </label>
+			<input type="text" id="Country" name="Country" ><br><br>
+		</fieldset>
+		<h2>4.Hobbies:</h2>
+		<fieldset>
+			<b> Listout the Hobbies and Interests : </b>
+			<textarea name="message" rows="3" cols="20" placeholder="Write here.."></textarea><br><br>
+		</fieldset>
+		<h2>5.Experience:</h2>
+		<fieldset>
+			<label for="work">Work Experience :</label>
+			<select name="workexperinence" id="work">
+			  <option value="0">0</option>
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			  <option value="3">3</option>
+			  <option value="3+">3+</option>
+			</select required> <br>
+			<label for="company name"> Company Name: </label>
+			<input type="text" id="company name" name="company name" required><br>
+			<label for="job title"> Job Title: </label>
+			<input type="text" id="job title" name="job title" required><br>
+			<label for="duration"> Duration From: </label>
+			<input type="date" id="duration" name="duration"><br>
+			<label for="dend">Duration End: </label>
+			<input type="date" id="dend" name="duration"><br>
+		</fieldset>
+		<h2>6.Salary:</h2>
+		<fieldset>
+			<label for="cSalary">Current Salary :</label>
+			<input type="number" id="cSalary" name="cSalary" > 
+			<br><br>
+			<label for="eSalary"> Expected Salary: </label>
+			<input type="number" id="eSalary" name="eSalary"><br>
+		</fieldset>
+		<h2>7.Photo:</h2>
+		<fieldset>
+			<label for="photo">Profile Photo :</label>
+			<input type="file" id="photo" name="photo"><br>
+		</fieldset>
+		 <br><br>
+		 <input type="reset" value="Reset">
+		 <input type="submit" value="Submit">
+		</form>
+	</body>
+</html>
